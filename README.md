@@ -147,7 +147,7 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
 
     # Plot training and validation loss
     print("Name: Shreedhar Kumar K J")
-    print("Register Number:212224240167")
+    print("Register Number:212224230265")
     plt.figure(figsize=(8, 6))
     plt.plot(range(1, num_epochs + 1), train_losses, label='Train Loss', marker='o')
     plt.plot(range(1, num_epochs + 1), val_losses, label='Validation Loss', marker='s')
@@ -186,7 +186,7 @@ def test_model(model, test_loader):
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     print("Name: Shreedhar Kumar K J")
-    print("Register Number: 212224240167")
+    print("Register Number: 212224230265")
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=train_dataset.classes, yticklabels=train_dataset.classes)
     plt.xlabel('Predicted')
@@ -196,7 +196,7 @@ def test_model(model, test_loader):
 
     # Print classification report
     print("Name: Shreedhar Kumar K J")
-    print("Register Number:212224240167")
+    print("Register Number:212224230265")
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=train_dataset.classes))
 # Evaluate the model
